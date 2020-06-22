@@ -48,6 +48,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
@@ -58,6 +59,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/margueriteroth/gatsby-prismic-starter-prist"
+  },
+  "resolutions": {
+    "gatsby-source-graphql-universal": "3.3.0"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
